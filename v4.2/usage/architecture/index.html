@@ -1137,7 +1137,7 @@
 <h2 id="standard-architecture">Standard Architecture<a class="headerlink" href="#standard-architecture" title="Permanent link">#</a></h2>
 <p>The architecture of a CANopen device is standardized and shown in the following figure:</p>
 <figure>
-<p><img alt="CANopen architecture" src="/assets/images/illustrations/standard-architecture.svg" title="Standardized CANopen Architecture" width="640px" /></p>
+<p><img alt="CANopen architecture" src="../../assets/images/illustrations/standard-architecture.svg" title="Standardized CANopen Architecture" width="640px" /></p>
 </figure>
 <h3 id="object-dictionary">Object Dictionary<a class="headerlink" href="#object-dictionary" title="Permanent link">#</a></h3>
 <p>The central component in a CANopen device is the <em>Object Directory (OD)</em>. The OD is organized as a table with object entries. Each <em>Entry</em> is addressed with a unique combination of <em>Index</em> and <em>SubIdx</em>. The index is a 16 bit value (from 0...0xFFFF), and the sub-index is a 8 bit value (from 0...0xFF). Within the CANopen standard, the layout and usage of many object entries is specified and marked as <em>mandatory</em>, <em>optional</em> or <em>manufacturer-specific</em>. The following table shows an overview of the OD areas:</p>
@@ -1222,7 +1222,7 @@
 <h3 id="network-management">Network Management<a class="headerlink" href="#network-management" title="Permanent link">#</a></h3>
 <p>The <em>Network Management State Machine (NMT)</em> of all CANopen devices within a CANopen network is controlled by the CANopen network master. The following state machine is specified:</p>
 <figure>
-<p><img alt="NMT States" src="/assets/images/illustrations/nmt-statemachine.svg" title="NMT States" width="480px" /></p>
+<p><img alt="NMT States" src="../../assets/images/illustrations/nmt-statemachine.svg" title="NMT States" width="480px" /></p>
 </figure>
 <p>Within this state machine, the state transitions with a number (e.g. [129]) will be activated with a network management command equal to this number. If no transition criteria is stated, the transition will be activated after finished state operations automatically. The following table summarizes the network management commands:</p>
 <table>

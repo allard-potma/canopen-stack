@@ -1260,7 +1260,7 @@
 <h1 id="rtos-and-baremetal">RTOS and Baremetal<a class="headerlink" href="#rtos-and-baremetal" title="Permanent link">#</a></h1>
 <p>This example describes the usage and differences when using the CANopen Stack with an RTOS or within a foreground / background system. The overall architecture of a CANopen device is standardized and shown in the following figure:</p>
 <figure>
-<p><img alt="CANopen architecture" src="/assets/images/illustrations/standard-architecture.svg" title="Standardized CANopen Architecture" width="640px" /></p>
+<p><img alt="CANopen architecture" src="../../assets/images/illustrations/standard-architecture.svg" title="Standardized CANopen Architecture" width="640px" /></p>
 </figure>
 <p>In this example, only the high-level usage within the component <strong>Your Application</strong> is addressed. We focus the description in the examples to the startup, event service, and CANopen stack processing API functions:</p>
 <table>
@@ -1297,7 +1297,7 @@
 <p>When using the CANopen stack in a foreground / background system, we establish a timer interrupt for triggering the elapsed time quantum and the CAN receive interrupt.</p>
 <p>The following figure shows an overview of the application:</p>
 <figure>
-<p><img alt="CANopen Application without RTOS" src="/assets/images/illustrations/canopen-without-rtos.svg" title="CANopen Application without RTOS" width="480px" /></p>
+<p><img alt="CANopen Application without RTOS" src="../../assets/images/illustrations/canopen-without-rtos.svg" title="CANopen Application without RTOS" width="480px" /></p>
 </figure>
 <p>The figure shows the hardware components which drives the CANopen stack operation. The <strong>CAN Controller</strong> is the interface to the CAN network. The <strong>Hardware Timer</strong> is the time base for all timed actions of the CANopen stack.</p>
 <p>Both hardware components are generating asynchronous events. We handle these events with the interrupt service routines (ISR) <em>CAN Receive ISR</em> and <em>Cyclic Timer ISR</em>.</p>
@@ -1363,7 +1363,7 @@
 <p>When using the CANopen stack with an RTOS, we establish a timer interrupt for triggering the elapsed time quantum and the CAN receive interrupt.</p>
 <p>The following figure shows an overview of the application:</p>
 <figure>
-<p><img alt="CANopen Application with RTOS" src="/assets/images/illustrations/canopen-with-rtos.svg" title="CANopen Application with RTOS" width="480px" /></p>
+<p><img alt="CANopen Application with RTOS" src="../../assets/images/illustrations/canopen-with-rtos.svg" title="CANopen Application with RTOS" width="480px" /></p>
 </figure>
 <p>The figure shows the hardware components which drives the CANopen stack operation. The <strong>CAN controller</strong> is the interface to the CAN network. The <strong>Hardware Timer</strong> is the time base for all timed actions. Within your RTOS, there is most likely a callback function which you can use as time service trigger.</p>
 <p>Both hardware components are producing asynchronous events. We collect these events by the interrupt service routines (ISR) <strong>CAN Receive ISR</strong> and <strong>Cyclic Timer ISR</strong>.</p>
